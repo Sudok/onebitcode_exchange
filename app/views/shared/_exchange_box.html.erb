@@ -14,6 +14,12 @@
             <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Quantidade ($10)" step="any" required>
           </div>
         </div>
+        <!-- Button for change currencies -->
+        <div class="change-money">
+          <button type="button" class="btn btn-secondary btn-block" id="change-currencies" >
+            <%= image_tag "/arrow-transfer.png" %>
+          </button>
+        </div>
         <div class="destination_currency">
           <div class="form-group">
             <p class="title">Moeda Pretendida</p>
@@ -24,7 +30,7 @@
           </div>
         </div>
         <div>
-          <button type="submit" class="btn btn-primary btn-exchange col-md-12">CONVERTER</button>
+          <!--button type="submit" class="btn btn-primary btn-exchange col-md-12">CONVERTER</button-->
         </div>
       <% end %>
     </div>
