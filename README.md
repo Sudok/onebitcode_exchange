@@ -1,24 +1,25 @@
-# README
+# Gw-exchange!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple app for currency conversions.
 
-Things you may want to cover:
+### Tech:
+  - Ruby 2.3
+  - Rails 5.0.2
+  - Coffeescript
 
-* Ruby version
+### Test:
 
-* System dependencies
+  - Rspec(backend).
+  - Capybara(front-end).
 
-* Configuration
+### Dependencies:
 
-* Database creation
+* [Fixer.io] - Api for currency conversion.
 
-* Database initialization
+### How to install:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+$ docker-compose build
+$ docker-compose run --rm website rake db:create db:migrate
+$ docker-compose up
+```
